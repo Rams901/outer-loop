@@ -48,8 +48,8 @@ feed.
 Compare default vs engagement on the same users: engagement should light more
 rose pips and, over days, more gray cells — that is the walk-back, visible.
 
-**LinkedIn / screen-record:** click one user, Space through 21 days, Tab to
-the trap, play again. Paste-ready caption: [`20-linkedin-post.md`](20-linkedin-post.md).
+**Screen-record:** click one user, Space through 21 days, Tab to the trap,
+play again. The clip is in the [LinkedIn post](https://lnkd.in/p/eeJaU5Yw).
 
 ## Feasibility
 

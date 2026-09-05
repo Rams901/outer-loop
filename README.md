@@ -12,7 +12,9 @@ This repo is a **standalone synthetic benchmark** of that *outer* loop. The inne
 
 It is **not** live For You, not X production data, and not a claim that RL should replace A/B tests.
 
-[Pre-registration](PREREGISTRATION.md) · [Confirmatory H1](docs/17-h1.md) · [DEV.to draft](docs/21-devto.md)
+The structure is borrowed from X’s open-sourced For You stack: [`xai-org/x-algorithm`](https://github.com/xai-org/x-algorithm) — Home Mixer weights in [`param.rs`](https://github.com/xai-org/x-algorithm/blob/main/home-mixer/params/param.rs), and the human search loop in [`BIDIRECTIONAL_BOOST_CHANGE.md`](https://github.com/xai-org/x-algorithm/blob/main/docs/BIDIRECTIONAL_BOOST_CHANGE.md) (tried 5 / 10 / 15 / 20, shipped 20, walked back to 15). This repo does not contain that code.
+
+Write-up: [DEV.to](https://dev.to/rams901/you-dont-retrain-for-you-when-the-product-changes-you-change-a-weight-i-simulated-that-loop-4ln8) · [LinkedIn](https://lnkd.in/p/eeJaU5Yw) · [pre-registration](PREREGISTRATION.md) · [confirmatory H1](docs/17-h1.md)
 
 ---
 
@@ -112,9 +114,8 @@ Default `w` is **not** August `param.rs`. Like/dwell were moved so the incumbent
 | [`docs/14-stage2.md`](docs/14-stage2.md) | N=50 lock |
 | [`docs/12-fidelity.md`](docs/12-fidelity.md) · [`docs/16-q8.md`](docs/16-q8.md) | When the sim is lying |
 | [`docs/15-c4.md`](docs/15-c4.md) | Contextual gate (failed) |
-| [`docs/18-business-value.md`](docs/18-business-value.md) | New feed vs For You |
+| [`docs/18-business-value.md`](docs/18-business-value.md) | New feed vs For You (protocol, not a post draft) |
 | [`docs/19-pixel-world.md`](docs/19-pixel-world.md) | Viewer |
-| [`docs/21-devto.md`](docs/21-devto.md) | Article draft |
 
 Design notes `01`–`13` are the lab trail (objectives, world, recalibration after a flat optimum). Don't mix numbers from `docs/06`–`08` with `09`+.
 
@@ -131,4 +132,4 @@ Design notes `01`–`13` are the lab trail (objectives, world, recalibration aft
 
 ## License
 
-MIT. Independent of X / xAI. Three structural facts are borrowed from the open-sourced Home Mixer (linear score over action probabilities, inverse-propensity weight scale, `w` and `k w` rank the same). Everything else — world, labels, search, stats — is ours.
+MIT. Independent of X / xAI. Three structural facts are borrowed from [x-algorithm](https://github.com/xai-org/x-algorithm) (linear score over action probabilities, inverse-propensity weight scale, `w` and `k w` rank the same). Everything else — world, labels, search, stats — is ours.

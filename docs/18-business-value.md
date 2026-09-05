@@ -1,70 +1,15 @@
-# 18 — Business value, LinkedIn draft, new product vs X
+# 18 — Decision protocol (new feed vs For You)
 
-Not a confirmatory report. Numbers below are from this synthetic benchmark
+Not a confirmatory report. Numbers are from this synthetic benchmark
 (`docs/17-h1.md`, `12`, `16`, `15`). They do **not** transfer as For You
-weights. The transferable object is a **decision protocol**: what to spend
-user-days on, and when a simulator is lying.
+weights. The transferable object is what to spend user-days on, and when a
+simulator is lying.
 
----
-
-## LinkedIn post draft
-
-X’s For You ranker does not pick tweets by training a new model every time the
-product changes. It multiplies predicted probabilities by a weight vector —
-`0.5` for a like, `5` for a reply, `−234` for a report. Changing what the feed
-optimises for is changing a number. The open-source trail shows how those
-numbers actually move: a mutual-follow reply boost was tried at 5, 10, 15 and
-20, rolled out at 20, then walked back to 15.
-
-That loop is a search procedure with people inside it. I built a small
-synthetic world where the inner ranker is frozen (`score = w · p̂`) and the
-outer loop — the config tuner — is the experiment. Question: can offline
-simulation reduce live A/B tests for those weights, and can we tell when the
-sim stops being trustworthy?
-
-What we tried, and what it proved:
-
-**1. Search the two-day proxy** (grid, random, GP, ES).  
-Every method beat the default on short-horizon engagement and **lost on
-21-day retention**. Walk-back rate 5/5. The trap was built in: bait is
-genuinely likeable and quietly corrosive. Conclusion: the bidirectional-boost
-failure mode is not a one-off. If you maximise the metric you can see
-tomorrow, you will ship a reversal.
-
-**2. Spend the same budget on delayed retention labels** (B5).  
-Eleven full-horizon measurements, ship the best *measured* config. About
-**+0.10** retention vs doing nothing. Conclusion: the expensive metric *is*
-the product. Waiting beats clever search on the wrong number.
-
-**3. Fit a simulator on those labels and extrapolate** (M1 vs B5).  
-Confirmatory, N=50, locked seeds, one allowed retune frozen in advance.
-Wilcoxon p=0.013, median regret edge −0.025, bootstrap CI **touches 0**.
-Mean retention **0.562 vs 0.560**. Conclusion: a model of the labels does
-not replace buying more of them. Powered for a 0.10 gap in regret; we saw a
-quarter of that. Practically a tie.
-
-**4. Dial how wrong the sim is** (fidelity / Q8).  
-A sim that cannot see that bait hurts retention is discarded by a live
-confirm — you ship default. Crossover vs honest labels sits near “mostly the
-true objective” (exploratory bait-blindness φ ≈ 0.75). Stale user tastes and
-miscalibrated rare-event predictions barely matter. Conclusion: wrongness is
-not one number. Panic if the sim is **blind to emptiness**. Don’t panic-rebuild
-it for every report-calibration bug.
-
-**5. Per-segment weights** (C4).  
-Best per-topic config vs best global: ~0 of headroom. Conclusion: don’t staff
-a contextual tuner until you can show the global config is a real compromise.
-
-Business value, one line: **fewer walk-backs, experiments spent on delayed
-retention, a rule for when the sim is not allowed to ship.** Not a new ranking
-model. Not “replace A/B testing.”
-
-A simulator cannot replace Home Mixer experiments. It can stop you running
-the ones that only win on two-day engagement. The ones you *do* run should
-buy delayed retention — not a surrogate of those same labels. You know the
-sim is lying when it cannot see the thing that makes people stop coming back.
-
-(Standalone synthetic benchmark, pre-registered, not X production data.)
+Public write-up: [DEV.to](https://dev.to/rams901/you-dont-retrain-for-you-when-the-product-changes-you-change-a-weight-i-simulated-that-loop-4ln8)
+· [LinkedIn](https://lnkd.in/p/eeJaU5Yw).
+Inspired by [x-algorithm](https://github.com/xai-org/x-algorithm)
+([`param.rs`](https://github.com/xai-org/x-algorithm/blob/main/home-mixer/params/param.rs),
+[walk-back](https://github.com/xai-org/x-algorithm/blob/main/docs/BIDIRECTIONAL_BOOST_CHANGE.md)).
 
 ---
 

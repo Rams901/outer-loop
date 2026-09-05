@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+title: "Outer loop: a synthetic benchmark for ranking-weight search"
+message: If you use this benchmark, please cite the repository and PREREGISTRATION.md.
+type: software
+authors:
+  - family-names: Hammadi
+    given-names: Ramsis
+date-released: "2026-09-05"
+license: MIT
+url: "https://github.com/REPLACE_ME/outer-loop"
+abstract: >-
+  Standalone synthetic benchmark of the outer loop that tunes ranking weights
+  (score = w · p̂) under a fixed user-day budget. Pre-registered confirmatory
+  comparison of a fitted GP simulator against delayed-retention A/B labels.

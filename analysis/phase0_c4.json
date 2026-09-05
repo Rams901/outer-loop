@@ -1,0 +1,218 @@
+{
+  "criterion": "C4",
+  "threshold": 0.2,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "runs": [
+    {
+      "world_seed": 0,
+      "v0": 0.455475,
+      "v_star_global": 0.5741125,
+      "v_star_segmented": 0.5782625,
+      "headroom": 0.1186375,
+      "gap": 0.004149999999999987,
+      "gap_over_headroom": 0.03498050784954156,
+      "passed": false,
+      "segments": [
+        {
+          "topic": 0,
+          "n_users": 987,
+          "v_segment": 0.5814083080040526,
+          "v_global_star_on_segment": 0.5814083080040526,
+          "weights": [
+            0.15,
+            8.0,
+            0.02,
+            8.0,
+            -70.0,
+            -300.0
+          ]
+        },
+        {
+          "topic": 1,
+          "n_users": 999,
+          "v_segment": 0.5812312312312312,
+          "v_global_star_on_segment": 0.5812312312312312,
+          "weights": [
+            0.15,
+            8.0,
+            0.02,
+            8.0,
+            -70.0,
+            -300.0
+          ]
+        },
+        {
+          "topic": 2,
+          "n_users": 1028,
+          "v_segment": 0.5893482490272374,
+          "v_global_star_on_segment": 0.5893482490272374,
+          "weights": [
+            0.15,
+            8.0,
+            0.02,
+            8.0,
+            -70.0,
+            -300.0
+          ]
+        },
+        {
+          "topic": 3,
+          "n_users": 986,
+          "v_segment": 0.5605476673427991,
+          "v_global_star_on_segment": 0.5605476673427991,
+          "weights": [
+            0.15,
+            8.0,
+            0.02,
+            8.0,
+            -70.0,
+            -300.0
+          ]
+        }
+      ]
+    },
+    {
+      "world_seed": 1,
+      "v0": 0.4598875,
+      "v_star_global": 0.570925,
+      "v_star_segmented": 0.5704,
+      "headroom": 0.11103750000000001,
+      "gap": -0.0005249999999999977,
+      "gap_over_headroom": -0.004728132387706835,
+      "passed": false,
+      "segments": [
+        {
+          "topic": 0,
+          "n_users": 970,
+          "v_segment": 0.5629896907216495,
+          "v_global_star_on_segment": 0.5629896907216495,
+          "weights": [
+            0.15,
+            8.0,
+            0.02,
+            8.0,
+            -70.0,
+            -300.0
+          ]
+        },
+        {
+          "topic": 1,
+          "n_users": 944,
+          "v_segment": 0.5654661016949153,
+          "v_global_star_on_segment": 0.5654661016949153,
+          "weights": [
+            0.15,
+            8.0,
+            0.02,
+            8.0,
+            -70.0,
+            -300.0
+          ]
+        },
+        {
+          "topic": 2,
+          "n_users": 1061,
+          "v_segment": 0.5756833176248822,
+          "v_global_star_on_segment": 0.5756833176248822,
+          "weights": [
+            0.15,
+            8.0,
+            0.02,
+            8.0,
+            -70.0,
+            -300.0
+          ]
+        },
+        {
+          "topic": 3,
+          "n_users": 1025,
+          "v_segment": 0.5764878048780487,
+          "v_global_star_on_segment": 0.5764878048780487,
+          "weights": [
+            0.15,
+            8.0,
+            0.02,
+            8.0,
+            -70.0,
+            -300.0
+          ]
+        }
+      ]
+    },
+    {
+      "world_seed": 2,
+      "v0": 0.454075,
+      "v_star_global": 0.56635,
+      "v_star_segmented": 0.5641375,
+      "headroom": 0.11227500000000001,
+      "gap": -0.0022125000000000616,
+      "gap_over_headroom": -0.019706078824315843,
+      "passed": false,
+      "segments": [
+        {
+          "topic": 0,
+          "n_users": 965,
+          "v_segment": 0.5730051813471503,
+          "v_global_star_on_segment": 0.5730051813471503,
+          "weights": [
+            0.15,
+            8.0,
+            0.02,
+            8.0,
+            -70.0,
+            -300.0
+          ]
+        },
+        {
+          "topic": 1,
+          "n_users": 1007,
+          "v_segment": 0.5621151936444886,
+          "v_global_star_on_segment": 0.5621151936444886,
+          "weights": [
+            0.15,
+            8.0,
+            0.02,
+            8.0,
+            -70.0,
+            -300.0
+          ]
+        },
+        {
+          "topic": 2,
+          "n_users": 999,
+          "v_segment": 0.561011011011011,
+          "v_global_star_on_segment": 0.561011011011011,
+          "weights": [
+            0.15,
+            8.0,
+            0.02,
+            8.0,
+            -70.0,
+            -300.0
+          ]
+        },
+        {
+          "topic": 3,
+          "n_users": 1029,
+          "v_segment": 0.5608357628765792,
+          "v_global_star_on_segment": 0.5608357628765792,
+          "weights": [
+            0.15,
+            8.0,
+            0.02,
+            8.0,
+            -70.0,
+            -300.0
+          ]
+        }
+      ]
+    }
+  ],
+  "mean_gap_over_headroom": 0.003515432212506295,
+  "passed": false,
+  "note": "Oracle pool per primary-topic segment. Gates the contextual extension; not part of confirmatory H1."
+}

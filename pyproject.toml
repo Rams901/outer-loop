@@ -1,0 +1,34 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rl-opt"
+version = "0.1.0"
+description = "Synthetic benchmark: can a fitted sim reduce live tests when tuning ranking weights, and can you tell when it is lying?"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24"]
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0", "matplotlib>=3.7"]
+viz = ["matplotlib>=3.7"]
+pixel = ["pygame>=2.5"]
+
+[project.scripts]
+prove-c1 = "rl_opt.prove_c1:main"
+prove-c4 = "rl_opt.prove_c4:main"
+export-trace = "rl_opt.export:main"
+run-pilot = "rl_opt.run_pilot:main"
+run-m1 = "rl_opt.run_m1:main"
+run-fidelity = "rl_opt.run_fidelity:main"
+run-q8 = "rl_opt.run_q8:main"
+lock-stage2 = "rl_opt.stage2:main"
+run-confirmatory = "rl_opt.run_confirmatory:main"
+pixel-world = "rl_opt.pixel_world:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"

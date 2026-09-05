@@ -1,0 +1,688 @@
+{
+  "phase": "2-q8-exploratory",
+  "note": "Not confirmatory H3. Four Q8 axes, coarse \u03c6 grid, same 5 exploratory seeds as docs/12. Supply-feedback axis omitted (off in this world).",
+  "phi_grid": [
+    0.0,
+    0.5,
+    1.0
+  ],
+  "axes": [
+    "bait",
+    "proxy",
+    "stale",
+    "rare"
+  ],
+  "mean_b0": 0.44905249999999997,
+  "mean_b5": 0.562895,
+  "by_axis": {
+    "bait": {
+      "mean_m1": {
+        "0.0": 0.44905249999999997,
+        "0.5": 0.44905249999999997,
+        "1.0": 0.5678000000000001
+      },
+      "m1_beats_b5_on_seeds": {
+        "0.0": 0,
+        "0.5": 0,
+        "1.0": 4
+      },
+      "crossover_phi_vs_b5": 0.979346933619655
+    },
+    "proxy": {
+      "mean_m1": {
+        "0.0": 0.44905249999999997,
+        "0.5": 0.5678000000000001,
+        "1.0": 0.5678000000000001
+      },
+      "m1_beats_b5_on_seeds": {
+        "0.0": 0,
+        "0.5": 4,
+        "1.0": 4
+      },
+      "crossover_phi_vs_b5": 0.47934693361965497
+    },
+    "stale": {
+      "mean_m1": {
+        "0.0": 0.5612375000000001,
+        "0.5": 0.566855,
+        "1.0": 0.5678000000000001
+      },
+      "m1_beats_b5_on_seeds": {
+        "0.0": 3,
+        "0.5": 5,
+        "1.0": 4
+      },
+      "crossover_phi_vs_b5": 0.14753004005340414
+    },
+    "rare": {
+      "mean_m1": {
+        "0.0": 0.5675125,
+        "0.5": 0.5678000000000001,
+        "1.0": 0.5678000000000001
+      },
+      "m1_beats_b5_on_seeds": {
+        "0.0": 4,
+        "0.5": 4,
+        "1.0": 4
+      },
+      "crossover_phi_vs_b5": 0.0
+    }
+  },
+  "runs": [
+    {
+      "world_seed": 10,
+      "b0_value": 0.48845,
+      "b5_value": 0.5742875,
+      "axes": {
+        "bait": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.48845,
+            "bait_share": 0.14282508434704552,
+            "proxy": 0.16142438070404172,
+            "unsafe": false,
+            "chosen_by": "fidelity_bait_phi_0",
+            "beats_b5": false
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.48845,
+            "bait_share": 0.14282508434704552,
+            "proxy": 0.16142438070404172,
+            "unsafe": false,
+            "chosen_by": "fidelity_bait_phi_0.5",
+            "beats_b5": false
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.5839625,
+            "bait_share": 0.00012487594560666707,
+            "proxy": 0.14441571036043316,
+            "unsafe": false,
+            "chosen_by": "fidelity_bait_phi_1",
+            "beats_b5": true
+          }
+        },
+        "proxy": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.48845,
+            "bait_share": 0.14282508434704552,
+            "proxy": 0.16142438070404172,
+            "unsafe": false,
+            "chosen_by": "fidelity_proxy_phi_0",
+            "beats_b5": false
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.5839625,
+            "bait_share": 0.00012487594560666707,
+            "proxy": 0.14441571036043316,
+            "unsafe": false,
+            "chosen_by": "fidelity_proxy_phi_0.5",
+            "beats_b5": true
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.5839625,
+            "bait_share": 0.00012487594560666707,
+            "proxy": 0.14441571036043316,
+            "unsafe": false,
+            "chosen_by": "fidelity_proxy_phi_1",
+            "beats_b5": true
+          }
+        },
+        "stale": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.5595,
+            "bait_share": 0.010182526661197703,
+            "proxy": 0.14585693477909048,
+            "unsafe": false,
+            "chosen_by": "fidelity_stale_phi_0",
+            "beats_b5": false
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.58005,
+            "bait_share": 0.00018021056529905034,
+            "proxy": 0.1447992454863918,
+            "unsafe": false,
+            "chosen_by": "fidelity_stale_phi_0.5",
+            "beats_b5": true
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.5839625,
+            "bait_share": 0.00012487594560666707,
+            "proxy": 0.14441571036043316,
+            "unsafe": false,
+            "chosen_by": "fidelity_stale_phi_1",
+            "beats_b5": true
+          }
+        },
+        "rare": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.5839625,
+            "bait_share": 0.00012487594560666707,
+            "proxy": 0.14441571036043316,
+            "unsafe": false,
+            "chosen_by": "fidelity_rare_phi_0",
+            "beats_b5": true
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.5839625,
+            "bait_share": 0.00012487594560666707,
+            "proxy": 0.14441571036043316,
+            "unsafe": false,
+            "chosen_by": "fidelity_rare_phi_0.5",
+            "beats_b5": true
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.5839625,
+            "bait_share": 0.00012487594560666707,
+            "proxy": 0.14441571036043316,
+            "unsafe": false,
+            "chosen_by": "fidelity_rare_phi_1",
+            "beats_b5": true
+          }
+        }
+      }
+    },
+    {
+      "world_seed": 11,
+      "b0_value": 0.4326875,
+      "b5_value": 0.5521875,
+      "axes": {
+        "bait": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.4326875,
+            "bait_share": 0.21945055893651,
+            "proxy": 0.1678955704844612,
+            "unsafe": false,
+            "chosen_by": "fidelity_bait_phi_0",
+            "beats_b5": false
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.4326875,
+            "bait_share": 0.21945055893651,
+            "proxy": 0.1678955704844612,
+            "unsafe": false,
+            "chosen_by": "fidelity_bait_phi_0.5",
+            "beats_b5": false
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.5547,
+            "bait_share": 0.0020602502618378257,
+            "proxy": 0.1461207596169453,
+            "unsafe": false,
+            "chosen_by": "fidelity_bait_phi_1",
+            "beats_b5": true
+          }
+        },
+        "proxy": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.4326875,
+            "bait_share": 0.21945055893651,
+            "proxy": 0.1678955704844612,
+            "unsafe": false,
+            "chosen_by": "fidelity_proxy_phi_0",
+            "beats_b5": false
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.5547,
+            "bait_share": 0.0020602502618378257,
+            "proxy": 0.1461207596169453,
+            "unsafe": false,
+            "chosen_by": "fidelity_proxy_phi_0.5",
+            "beats_b5": true
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.5547,
+            "bait_share": 0.0020602502618378257,
+            "proxy": 0.1461207596169453,
+            "unsafe": false,
+            "chosen_by": "fidelity_proxy_phi_1",
+            "beats_b5": true
+          }
+        },
+        "stale": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.5547,
+            "bait_share": 0.0020602502618378257,
+            "proxy": 0.1461207596169453,
+            "unsafe": false,
+            "chosen_by": "fidelity_stale_phi_0",
+            "beats_b5": true
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.5547,
+            "bait_share": 0.0020602502618378257,
+            "proxy": 0.1461207596169453,
+            "unsafe": false,
+            "chosen_by": "fidelity_stale_phi_0.5",
+            "beats_b5": true
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.5547,
+            "bait_share": 0.0020602502618378257,
+            "proxy": 0.1461207596169453,
+            "unsafe": false,
+            "chosen_by": "fidelity_stale_phi_1",
+            "beats_b5": true
+          }
+        },
+        "rare": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.5550625,
+            "bait_share": 0.001571807320180422,
+            "proxy": 0.14595844830384677,
+            "unsafe": false,
+            "chosen_by": "fidelity_rare_phi_0",
+            "beats_b5": true
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.5547,
+            "bait_share": 0.0020602502618378257,
+            "proxy": 0.1461207596169453,
+            "unsafe": false,
+            "chosen_by": "fidelity_rare_phi_0.5",
+            "beats_b5": true
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.5547,
+            "bait_share": 0.0020602502618378257,
+            "proxy": 0.1461207596169453,
+            "unsafe": false,
+            "chosen_by": "fidelity_rare_phi_1",
+            "beats_b5": true
+          }
+        }
+      }
+    },
+    {
+      "world_seed": 12,
+      "b0_value": 0.4338125,
+      "b5_value": 0.5568625,
+      "axes": {
+        "bait": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.4338125,
+            "bait_share": 0.22121388278861473,
+            "proxy": 0.16920571838604626,
+            "unsafe": false,
+            "chosen_by": "fidelity_bait_phi_0",
+            "beats_b5": false
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.4338125,
+            "bait_share": 0.22121388278861473,
+            "proxy": 0.16920571838604626,
+            "unsafe": false,
+            "chosen_by": "fidelity_bait_phi_0.5",
+            "beats_b5": false
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.57005,
+            "bait_share": 0.00045863236835739054,
+            "proxy": 0.14354275741710296,
+            "unsafe": false,
+            "chosen_by": "fidelity_bait_phi_1",
+            "beats_b5": true
+          }
+        },
+        "proxy": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.4338125,
+            "bait_share": 0.22121388278861473,
+            "proxy": 0.16920571838604626,
+            "unsafe": false,
+            "chosen_by": "fidelity_proxy_phi_0",
+            "beats_b5": false
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.57005,
+            "bait_share": 0.00045863236835739054,
+            "proxy": 0.14354275741710296,
+            "unsafe": false,
+            "chosen_by": "fidelity_proxy_phi_0.5",
+            "beats_b5": true
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.57005,
+            "bait_share": 0.00045863236835739054,
+            "proxy": 0.14354275741710296,
+            "unsafe": false,
+            "chosen_by": "fidelity_proxy_phi_1",
+            "beats_b5": true
+          }
+        },
+        "stale": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.5668375,
+            "bait_share": 0.0038030005201261812,
+            "proxy": 0.14384514650515634,
+            "unsafe": false,
+            "chosen_by": "fidelity_stale_phi_0",
+            "beats_b5": true
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.5668375,
+            "bait_share": 0.0038030005201261812,
+            "proxy": 0.14384514650515634,
+            "unsafe": false,
+            "chosen_by": "fidelity_stale_phi_0.5",
+            "beats_b5": true
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.57005,
+            "bait_share": 0.00045863236835739054,
+            "proxy": 0.14354275741710296,
+            "unsafe": false,
+            "chosen_by": "fidelity_stale_phi_1",
+            "beats_b5": true
+          }
+        },
+        "rare": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.5667,
+            "bait_share": 0.003658586022377169,
+            "proxy": 0.14502182214948173,
+            "unsafe": false,
+            "chosen_by": "fidelity_rare_phi_0",
+            "beats_b5": true
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.57005,
+            "bait_share": 0.00045863236835739054,
+            "proxy": 0.14354275741710296,
+            "unsafe": false,
+            "chosen_by": "fidelity_rare_phi_0.5",
+            "beats_b5": true
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.57005,
+            "bait_share": 0.00045863236835739054,
+            "proxy": 0.14354275741710296,
+            "unsafe": false,
+            "chosen_by": "fidelity_rare_phi_1",
+            "beats_b5": true
+          }
+        }
+      }
+    },
+    {
+      "world_seed": 13,
+      "b0_value": 0.470625,
+      "b5_value": 0.5713625,
+      "axes": {
+        "bait": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.470625,
+            "bait_share": 0.1507923169267707,
+            "proxy": 0.1606048166392994,
+            "unsafe": false,
+            "chosen_by": "fidelity_bait_phi_0",
+            "beats_b5": false
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.470625,
+            "bait_share": 0.1507923169267707,
+            "proxy": 0.1606048166392994,
+            "unsafe": false,
+            "chosen_by": "fidelity_bait_phi_0.5",
+            "beats_b5": false
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.5694,
+            "bait_share": 0.0014210660854590464,
+            "proxy": 0.14793428757319455,
+            "unsafe": false,
+            "chosen_by": "fidelity_bait_phi_1",
+            "beats_b5": false
+          }
+        },
+        "proxy": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.470625,
+            "bait_share": 0.1507923169267707,
+            "proxy": 0.1606048166392994,
+            "unsafe": false,
+            "chosen_by": "fidelity_proxy_phi_0",
+            "beats_b5": false
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.5694,
+            "bait_share": 0.0014210660854590464,
+            "proxy": 0.14793428757319455,
+            "unsafe": false,
+            "chosen_by": "fidelity_proxy_phi_0.5",
+            "beats_b5": false
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.5694,
+            "bait_share": 0.0014210660854590464,
+            "proxy": 0.14793428757319455,
+            "unsafe": false,
+            "chosen_by": "fidelity_proxy_phi_1",
+            "beats_b5": false
+          }
+        },
+        "stale": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.5642625,
+            "bait_share": 0.012045271090671062,
+            "proxy": 0.14865048332790268,
+            "unsafe": false,
+            "chosen_by": "fidelity_stale_phi_0",
+            "beats_b5": false
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.5718,
+            "bait_share": 0.00595884260748365,
+            "proxy": 0.14891799544419135,
+            "unsafe": false,
+            "chosen_by": "fidelity_stale_phi_0.5",
+            "beats_b5": true
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.5694,
+            "bait_share": 0.0014210660854590464,
+            "proxy": 0.14793428757319455,
+            "unsafe": false,
+            "chosen_by": "fidelity_stale_phi_1",
+            "beats_b5": false
+          }
+        },
+        "rare": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.57095,
+            "bait_share": 0.000721340956061948,
+            "proxy": 0.14672468955045823,
+            "unsafe": false,
+            "chosen_by": "fidelity_rare_phi_0",
+            "beats_b5": false
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.5694,
+            "bait_share": 0.0014210660854590464,
+            "proxy": 0.14793428757319455,
+            "unsafe": false,
+            "chosen_by": "fidelity_rare_phi_0.5",
+            "beats_b5": false
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.5694,
+            "bait_share": 0.0014210660854590464,
+            "proxy": 0.14793428757319455,
+            "unsafe": false,
+            "chosen_by": "fidelity_rare_phi_1",
+            "beats_b5": false
+          }
+        }
+      }
+    },
+    {
+      "world_seed": 14,
+      "b0_value": 0.4196875,
+      "b5_value": 0.559775,
+      "axes": {
+        "bait": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.4196875,
+            "bait_share": 0.2725748502994012,
+            "proxy": 0.1701440842338598,
+            "unsafe": false,
+            "chosen_by": "fidelity_bait_phi_0",
+            "beats_b5": false
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.4196875,
+            "bait_share": 0.2725748502994012,
+            "proxy": 0.1701440842338598,
+            "unsafe": false,
+            "chosen_by": "fidelity_bait_phi_0.5",
+            "beats_b5": false
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.5608875,
+            "bait_share": 0.005135970207280391,
+            "proxy": 0.14433720486395113,
+            "unsafe": false,
+            "chosen_by": "fidelity_bait_phi_1",
+            "beats_b5": true
+          }
+        },
+        "proxy": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.4196875,
+            "bait_share": 0.2725748502994012,
+            "proxy": 0.1701440842338598,
+            "unsafe": false,
+            "chosen_by": "fidelity_proxy_phi_0",
+            "beats_b5": false
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.5608875,
+            "bait_share": 0.005135970207280391,
+            "proxy": 0.14433720486395113,
+            "unsafe": false,
+            "chosen_by": "fidelity_proxy_phi_0.5",
+            "beats_b5": true
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.5608875,
+            "bait_share": 0.005135970207280391,
+            "proxy": 0.14433720486395113,
+            "unsafe": false,
+            "chosen_by": "fidelity_proxy_phi_1",
+            "beats_b5": true
+          }
+        },
+        "stale": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.5608875,
+            "bait_share": 0.005135970207280391,
+            "proxy": 0.14433720486395113,
+            "unsafe": false,
+            "chosen_by": "fidelity_stale_phi_0",
+            "beats_b5": true
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.5608875,
+            "bait_share": 0.005135970207280391,
+            "proxy": 0.14433720486395113,
+            "unsafe": false,
+            "chosen_by": "fidelity_stale_phi_0.5",
+            "beats_b5": true
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.5608875,
+            "bait_share": 0.005135970207280391,
+            "proxy": 0.14433720486395113,
+            "unsafe": false,
+            "chosen_by": "fidelity_stale_phi_1",
+            "beats_b5": true
+          }
+        },
+        "rare": {
+          "0.0": {
+            "phi": 0.0,
+            "value": 0.5608875,
+            "bait_share": 0.005135970207280391,
+            "proxy": 0.14433720486395113,
+            "unsafe": false,
+            "chosen_by": "fidelity_rare_phi_0",
+            "beats_b5": true
+          },
+          "0.5": {
+            "phi": 0.5,
+            "value": 0.5608875,
+            "bait_share": 0.005135970207280391,
+            "proxy": 0.14433720486395113,
+            "unsafe": false,
+            "chosen_by": "fidelity_rare_phi_0.5",
+            "beats_b5": true
+          },
+          "1.0": {
+            "phi": 1.0,
+            "value": 0.5608875,
+            "bait_share": 0.005135970207280391,
+            "proxy": 0.14433720486395113,
+            "unsafe": false,
+            "chosen_by": "fidelity_rare_phi_1",
+            "beats_b5": true
+          }
+        }
+      }
+    }
+  ]
+}

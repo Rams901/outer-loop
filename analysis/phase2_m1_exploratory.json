@@ -1,0 +1,687 @@
+{
+  "phase": "2-exploratory",
+  "note": "Not confirmatory. Same 5 pilot seeds as phase 1. M1 vs B5 is the load-bearing comparison: identical budget, identical access to delayed V, surrogate vs no surrogate.",
+  "spec": {
+    "budget_user_days": 24000,
+    "m1_label_users": 100,
+    "m1_confirm_users": 340
+  },
+  "runs": [
+    {
+      "world_seed": 10,
+      "v_star": 0.589525,
+      "v0": 0.48845,
+      "methods": {
+        "B0": {
+          "spent": 0,
+          "n_experiments": 0,
+          "n_labels": 0,
+          "proxy": 0.16142438070404172,
+          "value": 0.48845,
+          "unsafe": false,
+          "bait_share": 0.14282508434704552,
+          "regret": 1.0,
+          "weights": [
+            1.8,
+            3.5,
+            0.55,
+            1.0,
+            -43.2,
+            -234.0
+          ],
+          "chosen_by": "ship_default",
+          "walkback": false
+        },
+        "B1": {
+          "spent": 6400,
+          "n_experiments": 4,
+          "n_labels": 0,
+          "proxy": 0.1714180085441998,
+          "value": 0.4238375,
+          "unsafe": false,
+          "bait_share": 0.2580526024217163,
+          "regret": 1.6392530299282715,
+          "weights": [
+            5.0,
+            3.5,
+            0.55,
+            1.0,
+            -43.2,
+            -234.0
+          ],
+          "chosen_by": "max_proxy_grid",
+          "walkback": true
+        },
+        "B3": {
+          "spent": 24000,
+          "n_experiments": 15,
+          "n_labels": 0,
+          "proxy": 0.18868818643028376,
+          "value": 0.3112875,
+          "unsafe": false,
+          "bait_share": 0.531236665167399,
+          "regret": 2.7527825871877325,
+          "weights": [
+            7.6943309560107815,
+            0.9032662708384954,
+            4.1263834366003085,
+            0.4299882735693201,
+            -18.25630566844158,
+            -148.963380490166
+          ],
+          "chosen_by": "max_proxy_bo",
+          "walkback": true
+        },
+        "B4": {
+          "spent": 24000,
+          "n_experiments": 15,
+          "n_labels": 0,
+          "proxy": 0.17747473082838935,
+          "value": 0.397775,
+          "unsafe": false,
+          "bait_share": 0.31693512366702026,
+          "regret": 1.8971061093247592,
+          "weights": [
+            3.964174361920898,
+            1.8628937848419984,
+            0.5969250395313993,
+            1.121408137792658,
+            -22.035143669661554,
+            -320.96518720844665
+          ],
+          "chosen_by": "max_proxy_es",
+          "walkback": true
+        },
+        "B5": {
+          "spent": 23100,
+          "n_experiments": 11,
+          "n_labels": 11,
+          "proxy": 0.14464391611407623,
+          "value": 0.5742875,
+          "unsafe": false,
+          "bait_share": 0.0011112668442023908,
+          "regret": 0.1507543903042297,
+          "weights": [
+            0.28398273176039157,
+            11.563643163013651,
+            0.02915220790863287,
+            0.42481205852438236,
+            -22.091645746064646,
+            -79.18339945894748
+          ],
+          "chosen_by": "max_measured_v",
+          "walkback": false
+        },
+        "M1": {
+          "spent": 23100,
+          "n_experiments": 11,
+          "n_labels": 11,
+          "proxy": 0.1448794693415305,
+          "value": 0.5733375,
+          "unsafe": false,
+          "bait_share": 0.0025584722027259177,
+          "regret": 0.1601533514716786,
+          "weights": [
+            0.09448648936957528,
+            5.236427868701387,
+            0.011239186448930806,
+            0.7141673935555897,
+            -77.10961078791213,
+            -191.80358832955721
+          ],
+          "chosen_by": "gp_11_labels_lcb_1",
+          "walkback": false
+        }
+      },
+      "exploratory": true
+    },
+    {
+      "world_seed": 11,
+      "v_star": 0.5617875,
+      "v0": 0.4326875,
+      "methods": {
+        "B0": {
+          "spent": 0,
+          "n_experiments": 0,
+          "n_labels": 0,
+          "proxy": 0.1678955704844612,
+          "value": 0.4326875,
+          "unsafe": false,
+          "bait_share": 0.21945055893651,
+          "regret": 1.0,
+          "weights": [
+            1.8,
+            3.5,
+            0.55,
+            1.0,
+            -43.2,
+            -234.0
+          ],
+          "chosen_by": "ship_default",
+          "walkback": false
+        },
+        "B1": {
+          "spent": 6400,
+          "n_experiments": 4,
+          "n_labels": 0,
+          "proxy": 0.1811684019170385,
+          "value": 0.366975,
+          "unsafe": false,
+          "bait_share": 0.36356596118872037,
+          "regret": 1.5090046475600312,
+          "weights": [
+            5.0,
+            3.5,
+            0.55,
+            1.0,
+            -43.2,
+            -234.0
+          ],
+          "chosen_by": "max_proxy_grid",
+          "walkback": true
+        },
+        "B3": {
+          "spent": 24000,
+          "n_experiments": 15,
+          "n_labels": 0,
+          "proxy": 0.19556113902847572,
+          "value": 0.295425,
+          "unsafe": false,
+          "bait_share": 0.5967045427130829,
+          "regret": 2.063226181254841,
+          "weights": [
+            8.43725182991984,
+            2.0470835371162144,
+            3.3898799834947804,
+            1.270100978443519,
+            -9.003287696374436,
+            -112.7700717404938
+          ],
+          "chosen_by": "max_proxy_bo",
+          "walkback": true
+        },
+        "B4": {
+          "spent": 24000,
+          "n_experiments": 15,
+          "n_labels": 0,
+          "proxy": 0.18191712128726512,
+          "value": 0.3647875,
+          "unsafe": false,
+          "bait_share": 0.3630423208671107,
+          "regret": 1.5259488768396594,
+          "weights": [
+            2.605842338308894,
+            1.6570626921011644,
+            0.721311679310305,
+            0.81748191431885,
+            -44.78246318939571,
+            -190.30267199631723
+          ],
+          "chosen_by": "max_proxy_es",
+          "walkback": true
+        },
+        "B5": {
+          "spent": 23100,
+          "n_experiments": 11,
+          "n_labels": 11,
+          "proxy": 0.14498458042525564,
+          "value": 0.5521875,
+          "unsafe": false,
+          "bait_share": 0.011494551115723924,
+          "regret": 0.07436096049573929,
+          "weights": [
+            0.25607333891675194,
+            1.6058510897085279,
+            0.017616205398642996,
+            7.093771295870662,
+            -14.065253700709238,
+            -30.948235963751152
+          ],
+          "chosen_by": "max_measured_v",
+          "walkback": false
+        },
+        "M1": {
+          "spent": 23100,
+          "n_experiments": 11,
+          "n_labels": 11,
+          "proxy": 0.15675800576306204,
+          "value": 0.4854125,
+          "unsafe": false,
+          "bait_share": 0.10621677989711982,
+          "regret": 0.5915956622773042,
+          "weights": [
+            3.944826663573528,
+            14.358846320511413,
+            0.01405451850793248,
+            0.6728303113921978,
+            -9.401628705526985,
+            -106.5738416336554
+          ],
+          "chosen_by": "gp_11_labels_lcb_1",
+          "walkback": false
+        }
+      },
+      "exploratory": true
+    },
+    {
+      "world_seed": 12,
+      "v_star": 0.578075,
+      "v0": 0.4338125,
+      "methods": {
+        "B0": {
+          "spent": 0,
+          "n_experiments": 0,
+          "n_labels": 0,
+          "proxy": 0.16920571838604626,
+          "value": 0.4338125,
+          "unsafe": false,
+          "bait_share": 0.22121388278861473,
+          "regret": 1.0,
+          "weights": [
+            1.8,
+            3.5,
+            0.55,
+            1.0,
+            -43.2,
+            -234.0
+          ],
+          "chosen_by": "ship_default",
+          "walkback": false
+        },
+        "B1": {
+          "spent": 6400,
+          "n_experiments": 4,
+          "n_labels": 0,
+          "proxy": 0.18290369378417587,
+          "value": 0.356725,
+          "unsafe": false,
+          "bait_share": 0.40941360870366955,
+          "regret": 1.5343557750628194,
+          "weights": [
+            5.0,
+            3.5,
+            0.55,
+            1.0,
+            -43.2,
+            -234.0
+          ],
+          "chosen_by": "max_proxy_grid",
+          "walkback": true
+        },
+        "B3": {
+          "spent": 24000,
+          "n_experiments": 15,
+          "n_labels": 0,
+          "proxy": 0.19953151618398637,
+          "value": 0.273375,
+          "unsafe": false,
+          "bait_share": 0.7171595155263497,
+          "regret": 2.1121219998267047,
+          "weights": [
+            2.45459047119741,
+            0.4244003716818919,
+            4.266308126630283,
+            0.6611752127190456,
+            -14.553325978834042,
+            -279.9555925738319
+          ],
+          "chosen_by": "max_proxy_bo",
+          "walkback": true
+        },
+        "B4": {
+          "spent": 24000,
+          "n_experiments": 15,
+          "n_labels": 0,
+          "proxy": 0.18710507185595257,
+          "value": 0.3426125,
+          "unsafe": false,
+          "bait_share": 0.45200685578443545,
+          "regret": 1.6321809201975566,
+          "weights": [
+            2.549832068245755,
+            1.8423864793634932,
+            0.8767948331141747,
+            0.8976399698484284,
+            -29.6630242734924,
+            -285.0185591756226
+          ],
+          "chosen_by": "max_proxy_es",
+          "walkback": true
+        },
+        "B5": {
+          "spent": 23100,
+          "n_experiments": 11,
+          "n_labels": 11,
+          "proxy": 0.1461847060749959,
+          "value": 0.5568625,
+          "unsafe": false,
+          "bait_share": 0.012241927399809128,
+          "regret": 0.1470409843167834,
+          "weights": [
+            1.4128344092217113,
+            16.679421325157886,
+            0.1303571398667363,
+            0.688910542521129,
+            -11.71246073140262,
+            -225.99800899709143
+          ],
+          "chosen_by": "max_measured_v",
+          "walkback": false
+        },
+        "M1": {
+          "spent": 23100,
+          "n_experiments": 11,
+          "n_labels": 11,
+          "proxy": 0.14384514650515634,
+          "value": 0.5668375,
+          "unsafe": false,
+          "bait_share": 0.0038030005201261812,
+          "regret": 0.07789619617017597,
+          "weights": [
+            0.624082685200062,
+            14.286019897811812,
+            0.025401428341065645,
+            0.56722986232136,
+            -17.73425594884607,
+            -206.14031318074532
+          ],
+          "chosen_by": "gp_11_labels_lcb_1",
+          "walkback": false
+        }
+      },
+      "exploratory": true
+    },
+    {
+      "world_seed": 13,
+      "v_star": 0.5799125,
+      "v0": 0.470625,
+      "methods": {
+        "B0": {
+          "spent": 0,
+          "n_experiments": 0,
+          "n_labels": 0,
+          "proxy": 0.1606048166392994,
+          "value": 0.470625,
+          "unsafe": false,
+          "bait_share": 0.1507923169267707,
+          "regret": 1.0,
+          "weights": [
+            1.8,
+            3.5,
+            0.55,
+            1.0,
+            -43.2,
+            -234.0
+          ],
+          "chosen_by": "ship_default",
+          "walkback": false
+        },
+        "B1": {
+          "spent": 6400,
+          "n_experiments": 4,
+          "n_labels": 0,
+          "proxy": 0.1751644282319129,
+          "value": 0.39165,
+          "unsafe": false,
+          "bait_share": 0.2900133023887694,
+          "regret": 1.7226352510579892,
+          "weights": [
+            5.0,
+            3.5,
+            0.55,
+            1.0,
+            -43.2,
+            -234.0
+          ],
+          "chosen_by": "max_proxy_grid",
+          "walkback": true
+        },
+        "B3": {
+          "spent": 24000,
+          "n_experiments": 15,
+          "n_labels": 0,
+          "proxy": 0.19389160622926857,
+          "value": 0.305875,
+          "unsafe": false,
+          "bait_share": 0.535022245638684,
+          "regret": 2.5074917076518353,
+          "weights": [
+            7.6943309560107815,
+            0.9032662708384954,
+            4.1263834366003085,
+            0.4299882735693201,
+            -18.25630566844158,
+            -148.963380490166
+          ],
+          "chosen_by": "max_proxy_bo",
+          "walkback": true
+        },
+        "B4": {
+          "spent": 24000,
+          "n_experiments": 15,
+          "n_labels": 0,
+          "proxy": 0.18044237485448195,
+          "value": 0.377175,
+          "unsafe": false,
+          "bait_share": 0.33485495796024267,
+          "regret": 1.8550840672538031,
+          "weights": [
+            2.549832068245755,
+            1.8423864793634932,
+            0.8767948331141747,
+            0.8976399698484284,
+            -29.6630242734924,
+            -285.0185591756226
+          ],
+          "chosen_by": "max_proxy_es",
+          "walkback": true
+        },
+        "B5": {
+          "spent": 23100,
+          "n_experiments": 11,
+          "n_labels": 11,
+          "proxy": 0.14563672849549844,
+          "value": 0.5713625,
+          "unsafe": false,
+          "bait_share": 0.007052713458998035,
+          "regret": 0.07823401578405631,
+          "weights": [
+            0.25607333891675194,
+            1.6058510897085279,
+            0.017616205398642996,
+            7.093771295870662,
+            -14.065253700709238,
+            -30.948235963751152
+          ],
+          "chosen_by": "max_measured_v",
+          "walkback": false
+        },
+        "M1": {
+          "spent": 23100,
+          "n_experiments": 11,
+          "n_labels": 11,
+          "proxy": 0.1446604837834906,
+          "value": 0.5766125,
+          "unsafe": false,
+          "bait_share": 0.007768291142186492,
+          "regret": 0.030195585039460866,
+          "weights": [
+            0.2123288732025735,
+            1.1509590026765473,
+            0.01510955382403169,
+            6.667969344503666,
+            -14.793698333824418,
+            -34.93682977982244
+          ],
+          "chosen_by": "gp_11_labels_lcb_1",
+          "walkback": false
+        }
+      },
+      "exploratory": true
+    },
+    {
+      "world_seed": 14,
+      "v_star": 0.5645875,
+      "v0": 0.4196875,
+      "methods": {
+        "B0": {
+          "spent": 0,
+          "n_experiments": 0,
+          "n_labels": 0,
+          "proxy": 0.1701440842338598,
+          "value": 0.4196875,
+          "unsafe": false,
+          "bait_share": 0.2725748502994012,
+          "regret": 1.0,
+          "weights": [
+            1.8,
+            3.5,
+            0.55,
+            1.0,
+            -43.2,
+            -234.0
+          ],
+          "chosen_by": "ship_default",
+          "walkback": false
+        },
+        "B1": {
+          "spent": 6400,
+          "n_experiments": 4,
+          "n_labels": 0,
+          "proxy": 0.1786788040754969,
+          "value": 0.38505,
+          "unsafe": false,
+          "bait_share": 0.3491768187564648,
+          "regret": 1.2390441683919944,
+          "weights": [
+            3.2,
+            3.5,
+            0.55,
+            1.0,
+            -43.2,
+            -234.0
+          ],
+          "chosen_by": "max_proxy_grid",
+          "walkback": true
+        },
+        "B3": {
+          "spent": 24000,
+          "n_experiments": 15,
+          "n_labels": 0,
+          "proxy": 0.18864097363083165,
+          "value": 0.326475,
+          "unsafe": false,
+          "bait_share": 0.5099691214556079,
+          "regret": 1.6432884748102137,
+          "weights": [
+            5.366295605036328,
+            1.4042326921825026,
+            0.05114374457743913,
+            0.22708564095808137,
+            -12.61873287799371,
+            -163.89230019708754
+          ],
+          "chosen_by": "max_proxy_bo",
+          "walkback": true
+        },
+        "B4": {
+          "spent": 24000,
+          "n_experiments": 15,
+          "n_labels": 0,
+          "proxy": 0.1879068462401796,
+          "value": 0.33855,
+          "unsafe": false,
+          "bait_share": 0.4662286063569682,
+          "regret": 1.5599551414768804,
+          "weights": [
+            2.549832068245755,
+            1.8423864793634932,
+            0.8767948331141747,
+            0.8976399698484284,
+            -29.6630242734924,
+            -285.0185591756226
+          ],
+          "chosen_by": "max_proxy_es",
+          "walkback": true
+        },
+        "B5": {
+          "spent": 23100,
+          "n_experiments": 11,
+          "n_labels": 11,
+          "proxy": 0.1422963689892051,
+          "value": 0.559775,
+          "unsafe": false,
+          "bait_share": 0.0057842373553086525,
+          "regret": 0.033212560386473404,
+          "weights": [
+            0.25607333891675194,
+            1.6058510897085279,
+            0.017616205398642996,
+            7.093771295870662,
+            -14.065253700709238,
+            -30.948235963751152
+          ],
+          "chosen_by": "max_measured_v",
+          "walkback": false
+        },
+        "M1": {
+          "spent": 23100,
+          "n_experiments": 11,
+          "n_labels": 11,
+          "proxy": 0.14076042518397383,
+          "value": 0.5554,
+          "unsafe": false,
+          "bait_share": 0.005707314723048122,
+          "regret": 0.06340579710144936,
+          "weights": [
+            0.3654145486921378,
+            2.1380708921805986,
+            0.010259766903601565,
+            9.233832228546612,
+            -14.160925991901939,
+            -30.000000000000004
+          ],
+          "chosen_by": "gp_11_labels_lcb_1",
+          "walkback": false
+        }
+      },
+      "exploratory": true
+    }
+  ],
+  "mean_regret": {
+    "B0": 1.0,
+    "B1": 1.528858574400221,
+    "B3": 2.2157821901462658,
+    "B4": 1.6940550230185316,
+    "B5": 0.09672058225745642,
+    "M1": 0.1846493184120138
+  },
+  "mean_value": {
+    "B0": 0.44905249999999997,
+    "B1": 0.38484749999999995,
+    "B3": 0.3024875,
+    "B4": 0.36418,
+    "B5": 0.562895,
+    "M1": 0.55152
+  },
+  "walkbacks": {
+    "B0": 0,
+    "B1": 5,
+    "B3": 5,
+    "B4": 5,
+    "B5": 0,
+    "M1": 0
+  },
+  "m1_vs_b0_value": 0.10246750000000004,
+  "m1_vs_b3_value": 0.2490325,
+  "m1_vs_b4_value": 0.18734,
+  "m1_vs_b5_value": -0.011375000000000024,
+  "m1_vs_b5_paired": [
+    -0.0009499999999998954,
+    -0.06677500000000003,
+    0.009974999999999956,
+    0.005249999999999977,
+    -0.004375000000000018
+  ],
+  "m1_beats_b5_on_seeds": 2
+}

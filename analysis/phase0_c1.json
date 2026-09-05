@@ -1,0 +1,178 @@
+{
+  "phase": 0,
+  "criterion": "C1",
+  "min_proxy_lift": 0.05,
+  "params": {
+    "n_users": 4000,
+    "n_posts": 240,
+    "n_topics": 4,
+    "n_candidates": 48,
+    "feed_size": 12,
+    "horizon_days": 21,
+    "proxy_days": 2,
+    "bait_fraction": 0.22,
+    "cold_start_fraction": 0.15,
+    "position_decay": 0.72,
+    "pred_noise": 0.35,
+    "cold_start_noise": 1.1,
+    "propensity_spread": 0.45,
+    "interest_concentration": 0.7,
+    "bait_detectability": 1.0,
+    "supply_feedback": false,
+    "report_floor": 0.00025,
+    "hide_floor": 0.008
+  },
+  "default_weights": [
+    1.8,
+    3.5,
+    0.55,
+    1.0,
+    -43.2,
+    -234.0
+  ],
+  "engagement_weights": [
+    2.6,
+    3.0,
+    1.6,
+    1.2,
+    -32.0,
+    -90.0
+  ],
+  "seeds": [
+    {
+      "world_seed": 0,
+      "base_rates": {
+        "like": 0.1805257380869902,
+        "reply": 0.03649561653408817,
+        "dwell": 0.3102046732806178,
+        "share": 0.020727534187856726,
+        "hide": 0.0033501324105394783,
+        "report": 6.604258154649541e-05
+      },
+      "like_rate_bait_posts": 0.22332173671858582,
+      "like_rate_quality_posts": 0.16868854697611835,
+      "default": {
+        "proxy": 0.16134692975183773,
+        "value": 0.455475,
+        "like_rate": 0.061365547257530045,
+        "reply_rate": 0.01718680449082546,
+        "dwell_rate": 0.09879321430337801,
+        "share_rate": 0.009551659330332855,
+        "hide_rate": 0.0007047826301993175,
+        "report_rate": 1.0303839622797039e-05,
+        "bait_share": 0.18747217963301846,
+        "mean_satisfaction": 0.42016365883706985,
+        "n_impressions": 485256,
+        "unsafe": false
+      },
+      "engagement": {
+        "proxy": 0.17864539602574867,
+        "value": 0.3647875,
+        "like_rate": 0.06734120885192217,
+        "reply_rate": 0.013176927945032094,
+        "dwell_rate": 0.11103828265477303,
+        "share_rate": 0.007001577112778631,
+        "hide_rate": 0.0008513395413314046,
+        "report_rate": 1.5067956483741675e-05,
+        "bait_share": 0.39804518377884257,
+        "mean_satisfaction": 0.3235793382447797,
+        "n_impressions": 398196,
+        "unsafe": false
+      },
+      "proxy_lift": 0.10721286299353272,
+      "value_delta": -0.09068750000000003,
+      "c1": true
+    },
+    {
+      "world_seed": 1,
+      "base_rates": {
+        "like": 0.18527290328959317,
+        "reply": 0.03819887902581328,
+        "dwell": 0.3142686330715541,
+        "share": 0.02215877293177369,
+        "hide": 0.0031534812201647186,
+        "report": 6.25399783890547e-05
+      },
+      "like_rate_bait_posts": 0.22839947378348072,
+      "like_rate_quality_posts": 0.17245149044006106,
+      "default": {
+        "proxy": 0.16280518186347784,
+        "value": 0.4598875,
+        "like_rate": 0.0626629240110155,
+        "reply_rate": 0.017503861145840995,
+        "dwell_rate": 0.0995317594567429,
+        "share_rate": 0.009959304748596505,
+        "hide_rate": 0.0007027694017471175,
+        "report_rate": 2.6558145996257346e-05,
+        "bait_share": 0.1814084806288969,
+        "mean_satisfaction": 0.4254002975355935,
+        "n_impressions": 489492,
+        "unsafe": false
+      },
+      "engagement": {
+        "proxy": 0.1812338610081958,
+        "value": 0.3714875,
+        "like_rate": 0.06894480856490406,
+        "reply_rate": 0.013622388959735856,
+        "dwell_rate": 0.11229079549611001,
+        "share_rate": 0.007406803285981198,
+        "hide_rate": 0.0007908498670383661,
+        "report_rate": 1.4828435006969364e-05,
+        "bait_share": 0.3767682908745811,
+        "mean_satisfaction": 0.33256379493390925,
+        "n_impressions": 404628,
+        "unsafe": false
+      },
+      "proxy_lift": 0.11319467190037935,
+      "value_delta": -0.08839999999999998,
+      "c1": true
+    },
+    {
+      "world_seed": 2,
+      "base_rates": {
+        "like": 0.17944241959334856,
+        "reply": 0.03654898609407608,
+        "dwell": 0.3092789056805984,
+        "share": 0.020704472984452594,
+        "hide": 0.003307853103931656,
+        "report": 6.410270895409975e-05
+      },
+      "like_rate_bait_posts": 0.22362472790158427,
+      "like_rate_quality_posts": 0.16692016108886742,
+      "default": {
+        "proxy": 0.15844838921762,
+        "value": 0.454075,
+        "like_rate": 0.06040147795466944,
+        "reply_rate": 0.016587726694109673,
+        "dwell_rate": 0.09755492734216138,
+        "share_rate": 0.00943766635255997,
+        "hide_rate": 0.0005827505827505828,
+        "report_rate": 1.8598422853742002e-05,
+        "bait_share": 0.16721222040370975,
+        "mean_satisfaction": 0.4186951090624347,
+        "n_impressions": 483912,
+        "unsafe": false
+      },
+      "engagement": {
+        "proxy": 0.18115337559782005,
+        "value": 0.348375,
+        "like_rate": 0.06670850329463446,
+        "reply_rate": 0.012012341805250498,
+        "dwell_rate": 0.11338772094969146,
+        "share_rate": 0.006034933584353101,
+        "hide_rate": 0.0008707248195795418,
+        "report_rate": 2.0918313983892897e-05,
+        "bait_share": 0.40303577031691246,
+        "mean_satisfaction": 0.31236052732087444,
+        "n_impressions": 382440,
+        "unsafe": false
+      },
+      "proxy_lift": 0.14329578541196786,
+      "value_delta": -0.10570000000000002,
+      "c1": true
+    }
+  ],
+  "mean_proxy_lift": 0.12123444010195998,
+  "mean_value_delta": -0.09492916666666668,
+  "passed": true
+}

@@ -7,7 +7,7 @@ authors:
     given-names: Ramsis
 date-released: "2026-09-05"
 license: MIT
-url: "https://github.com/REPLACE_ME/outer-loop"
+url: "https://github.com/Rams901/outer-loop"
 abstract: >-
   Standalone synthetic benchmark of the outer loop that tunes ranking weights
   (score = w · p̂) under a fixed user-day budget. Pre-registered confirmatory

@@ -56,7 +56,7 @@ Space plays days. Click a cell for that user's feed. Notes: [`docs/19-pixel-worl
 Python 3.10+. NumPy is the only required dependency. Search (GP, EI, CMA-style ES, Wilcoxon) is written on NumPy — no SciPy / sklearn / PyTorch.
 
 ```bash
-git clone https://github.com/<you>/outer-loop.git
+git clone https://github.com/Rams901/outer-loop.git
 cd outer-loop
 python -m venv .venv && source .venv/bin/activate
 pip install -e '.[dev,viz,pixel]'
